@@ -125,7 +125,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 20px 80px; /* mais espaço embaixo para o footer */
+    padding: 50px 20px 80px;
     min-height: 100vh;
     text-align: center;
     gap: 25px;
@@ -163,6 +163,46 @@
   }
   
   .secao2 img {
+    max-width: 60%;
+    max-height: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffcc00;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+
+  .secaoform { /*seção do form */
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding: 40px 20px; /* mais espaço embaixo para o footer */
+    min-height: 100vh;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .secaoform .conteudoform {
+    max-width: 650px;
+    color: #eee;
+  }
+  
+  .secaoform h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+  }
+
+  .secaoform form {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px 50px;
+  }
+  
+  .secaoform img {
     max-width: 60%;
     max-height: 350px;
     height: auto;
