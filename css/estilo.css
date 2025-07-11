@@ -172,6 +172,79 @@
     display: block;
   }
 
+  .secaomosaico { /*seção mosaico */
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img1 img1 img2"
+    "img3 img4 img4"
+    "img5 img5 img5";
+    padding: 50px 20px 80px;
+    min-height: 100vh;
+    gap: 25px;
+  }
+
+  .img1 {
+    grid-area: img1;
+    background-image: url("/img/mosaic1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px #ffcc00;
+  }
+
+  .img2 {
+    grid-area: img2;
+    background-image: url("/img/mosaic2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px #ffcc00;
+  }
+
+  .img3 {
+    grid-area: img3;
+    background-image: url("/img/mosaic5.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px #ffcc00;
+  }
+
+  .img4 {
+    grid-area: img4;
+    background-image: url("/img/mosaic3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px #ffcc00;
+  }
+
+  .img5 {
+    grid-area: img5;
+    background-image: url("/img/mosaic4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px #ffcc00;
+  }
+
+  .secaoform2 {
+    min-height: 100vh; /* uma tela cheia */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "imgform2 form2"
+    "form2";
+    padding: 50px 20px 80px;
+    gap: 25px;
+    background-color: #333;
+  }
+  
   .secaoform { /*seção do form */
     background-color: #222;
     display: flex;
