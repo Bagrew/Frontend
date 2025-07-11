@@ -17,6 +17,8 @@
       <a href="#banda">A Banda</a>
       <a href="#discografia">Discografia</a>
       <a href="#form">Formulário</a>
+      <a href="#mosaico">Mosaico</a>
+      <a href="#form2">Formulário 2</a>
     </nav>
   </header>
 
@@ -40,6 +42,61 @@
         <img src="./img/discos.webp" alt="Capa de discos clássicos do Queen" />
       </div>
     </section>
+
+    <section id="mosaico">
+        <div class="secaomosaico">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+            <div class="img5"></div>
+        </div>
+
+    </section>
+
+    <section id="form2">
+      <div class="secaoform2">
+        <div class="imgform2">
+          <img 
+          srcset="
+          img/img1form2.webp 320w,
+          img/img2form2.webp 480w,
+          img/img3form2.webp 800w"
+          sizes="(width < 320px) 280px,
+          (width < 480px) 460px,
+          800px"
+          src="img/img3form2.webp">
+        </div>
+        <div class="form2">
+            <form>
+              <fieldset>
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco"><br><br><hr>
+                <label for="nascimento">Data de nascimento:</label><br>
+                <input type="date" id="nascimento" name="nascimento"><br><br><hr>
+                <label for="show">Já foi a um show do Queen?</label>
+                <input type="checkbox" id="show" name="show"><br><br><hr>
+                <p>Qual é o seu integrante favorito do Queen?</p><br>
+                <label for="freddie">Freddie Mercury</label>
+                <input type="radio" id="freddie" name="integrante"><br>
+                <label for="brian">Brian May</label>
+                <input type="radio" id="brian" name="integrante"><br>
+                <label for="john">John Deacon</label>
+                <input type="radio" id="john" name="integrante"><br>
+                <label for="roger">Roger Meddows</label>
+                <input type="radio" id="roger" name="integrante"><br>
+                <label for="doug">Doug Foggie</label>
+                <input type="radio" id="doug" name="integrante"><br>
+                <label for="barry">Barry Mitchell</label>
+                <input type="radio" id="barry" name="integrante"><br><br><hr>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br><hr>
+            </fieldset>
+            </form>
+        </div>
+      </div>
+    </section>
+
     <section id="form" class="secaoform">
         <div class="conteudoform">
             <h2>Envie seu formulário!</h2><br>
