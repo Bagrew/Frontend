@@ -2,34 +2,82 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Queen - A Lenda do Rock</title>
-  <link rel="stylesheet" href="./css/estilo.css" />
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="./css/estilo.css" />
+
+  <!-- SEO e Redes Sociais (meta tags) -->
+  <meta name="description" content="Tributo à banda Queen com informações, fotos e playlist." />
+  <meta name="author" content="Seu Nome" />
+  <meta name="keywords" content="Queen, banda, rock, tributo, música" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Queen - A Lenda do Rock" />
+  <meta property="og:description" content="Tributo à banda Queen com informações, fotos e playlist." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prietsch.github.io/Queen-Sequence/" />
+  <meta property="og:image" content="https://prietsch.github.io/Queen-Sequence/img/queen.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Queen - A Lenda do Rock" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Queen - A Lenda do Rock" />
+  <meta name="twitter:description" content="Tributo à banda Queen com informações, fotos e playlist." />
+  <meta name="twitter:image" content="https://prietsch.github.io/Queen-Sequence/img/queen.webp" />
+  <meta name="twitter:site" content="@SeuTwitter" />
+  <meta name="twitter:creator" content="@SeuTwitter" />
+
+  <meta name="pinterest-rich-pin" content="true" />
 </head>
 <body>
 
   <header class="menu-sticky">
-    <div class="logo">
-      <img src="./img/logo.webp" alt="logo" />
-    </div>    
-    <nav>
-      <a href="#banda">A Banda</a>
-      <a href="#discografia">Discografia</a>
-      <a href="#form">Formulário</a>
-      <a href="#mosaico">Mosaico</a>
-      <a href="#form2">Formulário 2</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Queen</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#banda">A Banda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#discografia">Discografia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#formulario">Contato</a></li>
+            <li class="nav-item"><a class="nav-link" href="#painel">Fotos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#carrossel">Momentos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#animacao">Spotify</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="banda" class="secao">
-      <h1>Queen: A Lenda do Rock</h1>
-      <p>Formada em 1970, Queen é uma das maiores bandas da história da música. Com Freddie Mercury nos vocais, Brian May na guitarra, Roger Taylor na bateria e John Deacon no baixo, o grupo marcou gerações com seu som único e performances icônicas.</p>
-      <img src="./img/queen.webp" alt="Banda Queen em apresentação ao vivo" />
+    <!-- 1. Banda -->
+    <section id="banda" class="secao concept-six scroll-section">
+      <div class="word" aria-label="Queen">
+        <span class="char">Q</span>
+        <span class="char">U</span>
+        <span class="char">E</span>
+        <span class="char">E</span>
+        <span class="char">N</span>
+      </div>
+      <p class="legenda-tributo">Um tributo</p>
     </section>
 
-    <section id="discografia" class="secao secao2">
+    <!-- 2. Discografia -->
+    <section id="discografia" class="secao secao2 scroll-section">
       <div class="conteudo">
         <h2>Discografia Marcante</h2>
         <p>Alguns dos álbuns mais importantes da carreira do Queen:</p>
@@ -39,81 +87,150 @@
           <li><strong>Jazz</strong> (1978)</li>
           <li><strong>The Game</strong> (1980)</li>
         </ul>
-        <img src="./img/discos.webp" alt="Capa de discos clássicos do Queen" />
+        <img src="./img/discos (1).webp" alt="Capas de discos clássicos do Queen" loading="lazy" width="400" height="auto" />
       </div>
     </section>
 
-    <section id="mosaico">
-        <div class="secaomosaico">
-            <div class="img1"></div>
-            <div class="img2"></div>
-            <div class="img3"></div>
-            <div class="img4"></div>
-            <div class="img5"></div>
-        </div>
-
-    </section>
-
-    <section id="form2">
-      <div class="secaoform2">
-        <div class="imgform2">
-          <img 
-          srcset="
-          img/img1form2.webp 320w,
-          img/img2form2.webp 480w,
-          img/img3form2.webp 800w"
-          sizes="(width < 320px) 280px,
-          (width < 480px) 460px,
-          800px"
-          src="img/img3form2.webp">
-        </div>
-        <div class="form2">
-            <form>
-              <fieldset>
-                <label for="endereco">Endereço:</label><br>
-                <input type="text" id="endereco" name="endereco"><br><br><hr>
-                <label for="nascimento">Data de nascimento:</label><br>
-                <input type="date" id="nascimento" name="nascimento"><br><br><hr>
-                <label for="show">Já foi a um show do Queen?</label>
-                <input type="checkbox" id="show" name="show"><br><br><hr>
-                <p>Qual é o seu integrante favorito do Queen?</p><br>
-                <label for="freddie">Freddie Mercury</label>
-                <input type="radio" id="freddie" name="integrante"><br>
-                <label for="brian">Brian May</label>
-                <input type="radio" id="brian" name="integrante"><br>
-                <label for="john">John Deacon</label>
-                <input type="radio" id="john" name="integrante"><br>
-                <label for="roger">Roger Meddows</label>
-                <input type="radio" id="roger" name="integrante"><br>
-                <label for="doug">Doug Foggie</label>
-                <input type="radio" id="doug" name="integrante"><br>
-                <label for="barry">Barry Mitchell</label>
-                <input type="radio" id="barry" name="integrante"><br><br><hr>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br><hr>
-            </fieldset>
-            </form>
-        </div>
+    <!-- 3. Formulário -->
+    <section id="formulario" class="secao scroll-section">
+      <div class="container d-flex flex-wrap align-items-center justify-content-center">
+        <picture class="col-md-6">
+          <!-- Tela menor que 576px (celulares) -->
+          <source media="(max-width: 575.98px)" srcset="./img/queen_forms_small.webp" />
+          <!-- Tela entre 576px e 991.98px (tablets e pequenos desktops) -->
+          <source media="(min-width: 576px) and (max-width: 991.98px)" srcset="./img/queen_forms_medium.webp" />
+          <!-- Tela maior que 992px (desktops) -->
+          <source media="(min-width: 992px)" srcset="./img/queen_forms_large.webp" />
+          <!-- Imagem padrão -->
+          <img src="./img/queen_forms_large.webp" alt="Imagem da banda Queen" class="img-fluid rounded" loading="lazy" width="600" height="400" />
+        </picture>
+        <form class="col-md-6 p-4" aria-label="Formulário de contato">
+          <fieldset>
+            <legend>Fale conosco</legend>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="nome" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="nascimento" class="form-label">Data de nascimento:</label>
+              <input type="date" class="form-control" id="nascimento" />
+            </div>
+            <div class="mb-3">
+              <label for="genero" class="form-label">Gênero musical favorito:</label>
+              <select class="form-select" id="genero">
+                <option>Rock</option>
+                <option>Pop</option>
+                <option>Clássico</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem:</label>
+              <textarea class="form-control" id="mensagem" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </fieldset>
+        </form>
       </div>
     </section>
 
-    <section id="form" class="secaoform">
-        <div class="conteudoform">
-            <h2>Envie seu formulário!</h2><br>
-            <form>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname"><br><br>
-                <input type="submit" value="Submit">
-            </form>
+    <!-- 4. Painel -->
+    <section id="painel" class="secao scroll-section">
+      <h2>Painel de Fotos</h2>
+      <div class="painel-mosaico" aria-label="Galeria de fotos do Queen">
+        <div class="painel-item" style="background-image: url('./img/queen1.webp');" role="img" aria-label="Imagem da banda Queen 1"></div>
+        <div class="painel-item" style="background-image: url('./img/queen2.webp');" role="img" aria-label="Imagem da banda Queen 2"></div>
+        <div class="painel-item" style="background-image: url('./img/queen3.webp');" role="img" aria-label="Imagem da banda Queen 3"></div>
+        <div class="painel-item" style="background-image: url('./img/queen4.webp');" role="img" aria-label="Imagem da banda Queen 4"></div>
+        <div class="painel-item" style="background-image: url('./img/queen5.webp');" role="img" aria-label="Imagem da banda Queen 5"></div>
+        <div class="painel-item" style="background-image: url('./img/queen6.webp');" role="img" aria-label="Imagem da banda Queen 6"></div>
+      </div>
+    </section>
+
+    <!-- 5. Carrossel + Tabela -->
+    <section id="carrossel" class="secao scroll-section">
+      <h2>Momentos Marcantes</h2>
+      <div class="tabela-scroll-container" role="region" aria-label="Tabela com eventos marcantes da banda">
+        <table class="table table-striped table-hover table-dark tabela-eventos">
+          <thead>
+            <tr><th>Ano</th><th>Evento</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1973</td><td>Lançamento do primeiro álbum "Queen"</td></tr>
+            <tr><td>1975</td><td>Lançamento de "Bohemian Rhapsody"</td></tr>
+            <tr><td>1981</td><td>Turnê mundial "The Game Tour"</td></tr>
+            <tr><td>1985</td><td>Apresentação histórica no Live Aid</td></tr>
+            <tr><td>1991</td><td>Falecimento de Freddie Mercury</td></tr>
+            <tr><td>2005</td><td>Turnê com Paul Rodgers</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="carouselExample" class="carousel slide " data-bs-ride="carousel" aria-label="Carrossel de imagens do Queen">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/queen.jpg" class="d-block w-100" alt="Show do Queen ao vivo" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/discos.jpg" class="d-block w-100" alt="Discos da banda Queen" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/queen1.jpg" class="d-block w-100" alt="Imagem Queen 1" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/queen2.jpg" class="d-block w-100" alt="Imagem Queen 2" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/queen3.jpg" class="d-block w-100" alt="Imagem Queen 3" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/queen4.jpg" class="d-block w-100" alt="Imagem Queen 4" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/queen5.jpg" class="d-block w-100" alt="Imagem Queen 5" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/queen6.jpg" class="d-block w-100" alt="Imagem Queen 6" loading="lazy" />
+          </div>
         </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Slide anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Próximo slide">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 6. Spotify - somente botão agora -->
+    <section id="animacao" class="secao scroll-section">
+      <h2>Ouça a Playlist do Queen</h2>
+
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0ENBD2?si=lgivheQ8RIa43wn4oNvU4w"
+         target="_blank"
+         class="btn-video"
+         rel="noopener noreferrer">
+         Abrir no Spotify
+      </a>
+
+      <div class="animacao-exemplo mt-5">
+        <h3 class="animated-text">Rock On!</h3>
+      </div>
     </section>
   </main>
 
-  <footer class="x">
+  <footer class="text-center p-3 bg-dark text-light">
     <p>&copy; 2025 - Tributo ao Queen</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
 </body>
 </html>
